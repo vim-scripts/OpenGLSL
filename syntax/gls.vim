@@ -1,12 +1,12 @@
 " Vim syntax file
 " Language:	OpenGL Shader Language
 " Maintainer:	Adam Butcher <adam@jessamine.co.uk>
-" Version:	0.11
+" Version:	0.12
 " Last change:	2005 February 26
 " Note : Based on cg.vim Rev Lebaredian
 
 " I use:
-"   autocmd BufNewFile,BufRead *.gls,*.shd,*.ogl set filetype=gls cindent comments=sr:/*,mbl:*,ex:*/,://
+"   autocmd BufNewFile,BufRead *.vp,*.fp,*.vert,*.frag,*.shd,*.gls set filetype=gls cindent comments=sr:/*,mbl:*,ex:*/,://
 " to autoset this syntax
 
 if version < 600
@@ -160,7 +160,7 @@ syn keyword shdFunctions	noise1 noise2 noise3 noise4
 " The minimum and maximum operators in GNU C++
 syn match shdMinMax "[<>]?"
 
-syn match shdGroup "\[[^\]]*\]"
+syn match shdGroup "^\[[^\]]*\]"
 
 syn match shdSwizzle "\<[wxyz]\{1,4}\>"
 syn match shdSwizzle "\<[rgba]\{1,4}\>"
