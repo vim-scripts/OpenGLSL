@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	OpenGL Shader Language
 " Maintainer:	Adam Butcher <adam@jessamine.co.uk>
-" Version:	.1
+" Version:	0.11
 " Last change:	2005 February 26
 " Note : Based on cg.vim Rev Lebaredian
 
@@ -163,6 +163,8 @@ syn match shdMinMax "[<>]?"
 syn match shdGroup "\[[^\]]*\]"
 
 syn match shdSwizzle "\<[wxyz]\{1,4}\>"
+syn match shdSwizzle "\<[rgba]\{1,4}\>"
+syn match shdSwizzle "\<[stpq]\{1,4}\>"
 
 " Default highlighting
 if version >= 508 || !exists("did_shd_syntax_inits")
